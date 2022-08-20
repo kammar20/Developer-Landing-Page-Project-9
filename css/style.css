@@ -1,0 +1,497 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Righteous Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/***** UTILITY *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--body-bg);
+}
+
+:root {
+  --main-bg: #4516fe;
+  --body-bg: #f8f8fa;
+  --que-bg: #e9edff;
+  --btn-gb: #5a31fc;
+  --foot-bg: #4718fe;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+/*******  *******/
+
+/******* Header *******/
+header {
+  background-color: var(--main-bg);
+  color: var(--white);
+  width: 100%;
+  position: relative;
+}
+
+/** navbar **/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 5rem 1rem 2rem;
+}
+
+/* nav items */
+nav a {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+nav .nav-item-active {
+  margin-right: 1.5rem;
+  background-color: var(--white);
+  color: var(--btn-gb);
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+
+/* logo */
+.logo {
+  width: 12rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  margin-bottom: 10rem;
+}
+
+/** Header text and img wrapper **/
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* header text */
+.header-text {
+  margin-left: 5rem;
+}
+
+.header-text h2 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.header-text p {
+  font-size: 1.8rem;
+  padding-bottom: 14rem;
+}
+
+/* haeder img */
+.header-img-container {
+  width: 40%;
+  background-color: red;
+  position: relative;
+}
+
+.header-img-container img {
+  width: 100%;
+  position: absolute;
+  top: -102px;
+  right: 0;
+}
+/*******  *******/
+
+/******* Companies *******/
+.companies {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.companies .company-items {
+  color: var(--black);
+  margin-right: 10rem;
+  font-family: 'Righteous', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.companies .company-items:hover {
+  font-weight: 600;
+}
+
+/*******  *******/
+
+/******* API Section *******/
+.api {
+  padding: 5rem;
+}
+
+.api h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+
+/* API Cards Container */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Single Card */
+.card {
+  padding: 4rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  align-self: normal;
+}
+
+/* Single Card Hover */
+.card:hover {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card:hover .card-head {
+  color: var(--btn-gb);
+}
+
+/* card img */
+.card-logo {
+  margin-bottom: 2rem;
+}
+
+/* card heading */
+.card-head {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* card para */
+.card-body {
+  font-size: 1.4rem;
+}
+
+/* Active Card */
+.card-active {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Card  Active Heading*/
+.card-head-active {
+  color: var(--btn-gb);
+}
+/*******  *******/
+
+/******* Blog Section *******/
+.blog {
+  padding: 5rem;
+  margin-bottom: 4rem;
+}
+
+.blog-heading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+
+/* Blogs Card Container */
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/** Single Blog Card **/
+.blog-card {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  align-self: normal;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+/* blog content */
+.blog-content {
+  background-color: var(--white);
+  position: relative;
+  padding: 1rem 4rem 3rem 3rem;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.blog-content h6 {
+  font-size: 1.2rem;
+  color: var(--btn-gb);
+  margin-bottom: 0.8rem;
+}
+
+.blog-content h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.blog-content small {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+/* blog bottom writter */
+.blog-bottom {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -18px;
+  left: 35px;
+}
+
+.blog-bottom .blog-author {
+  font-size: 1.2rem;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+/*******  *******/
+
+/******* FAQ Section *******/
+.faq-section {
+  background-color: var(--que-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 5rem;
+}
+
+.faq-content,
+.faq-image {
+  width: 50%;
+}
+
+/* faq content */
+.faq-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 5rem;
+}
+
+.faq-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #666;
+}
+
+.faq-content h4 + h4 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.faq-content button {
+  display: inline-block;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--btn-gb);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.faq-content button:hover {
+  background-color: var(--main-bg);
+}
+
+/* FAQ image  */
+.faq-section img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+/*******  *******/
+
+/******* Download Section *******/
+.download-section {
+  padding: 10rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-content {
+  width: 60%;
+}
+
+/* download content */
+.download-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.download-content span {
+  font-weight: 500;
+}
+
+/* download email */
+
+.download-email {
+  width: 50%;
+}
+
+/* form */
+.download-section form {
+  background-color: var(--que-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+  width: 100%;
+  border-radius: 3rem;
+}
+
+form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 2;
+  padding-left: 3rem;
+}
+
+::placeholder {
+  color: var(--black);
+}
+
+.download-email button {
+  display: inline-block;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--btn-gb);
+  color: var(--white);
+  cursor: pointer;
+  padding: 1.4rem 5rem;
+  border-radius: 3rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.download-email button:hover {
+  background-color: var(--main-bg);
+}
+
+/*******  *******/
+
+/******* Footer Section *******/
+.footer-section {
+  background-color: var(--foot-bg);
+  color: var(--white);
+  padding: 8rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**** footer left ****/
+.footer-left img {
+  width: 140px;
+  margin-bottom: 3rem;
+}
+
+/* footer left list menu */
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* list items */
+.list li {
+  font-size: 1.2rem;
+  padding: 0 2rem 0;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+/* vertical line */
+.list li ~ li {
+  border-left: 1px solid var(--white);
+}
+
+/* first item lorem */
+.list-items:first-child {
+  padding-left: 0;
+}
+
+/**** footer right ****/
+
+.footer-right {
+  text-align: right;
+}
+.footer-social {
+  margin-bottom: 3rem;
+}
+
+/* social icon */
+.footer-logos {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+/* social icon below list */
+.logos-list {
+  display: flex;
+}
+
+.logos-list li {
+  font-size: 1.2rem;
+  padding: 0 2rem 0;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.logos-list li ~ li {
+  border-left: 1px solid var(--white);
+}
+
+.logos-list li:last-child {
+  padding-right: 0;
+}
